@@ -35,8 +35,8 @@ I've commented where I feel necessary, though I have removed all the comments fr
 comment blocks taking up space and bytes in my css). Both Rich's and Nicolas' css is well commented (Nicolas' in such a 
 way it should become a paradigm for all programmers to follow!) so if you've any questions, try going back to source first:
 
-Reset.css 		: http://html5doctor.com/html-5-reset-stylesheet/
-Normalize.css 	: http://necolas.github.io/normalize.css/
+ + Reset.css 		: http://html5doctor.com/html-5-reset-stylesheet/
+ + Normalize.css 	: http://necolas.github.io/normalize.css/
 
 Feel free to build on this and make it your own. It's very simple, but one of those tasks I've been putting off for years.
 I'm really glad it's done and once I've used it in a project or two, I'll make refinements where necessary.
