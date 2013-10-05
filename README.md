@@ -40,3 +40,12 @@ way it should become a paradigm for all programmers to follow!) so if you've any
 
 Feel free to build on this and make it your own. It's very simple, but one of those tasks I've been putting off for years.
 I'm really glad it's done and once I've used it in a project or two, I'll make refinements where necessary.
+
+###TODO
+
+- Add favicons
+- Add Apple icons
+- Add vertical rhythm supports
+- Flesh out index.html to actually do something as a page
+- Insert content to see how things look
+- Nest columns to test functionality
