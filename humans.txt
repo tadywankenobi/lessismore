@@ -3,5 +3,11 @@ HTML, SASS/CSS, JS Author				:	Tady Walsh
 											http://www.tadywalsh.com
 
 Credit to source material:
+Reset.css 								:	Eric Meyer				http://meyerweb.com/eric/tools/css/reset/
 Reset.css  								:	Rich Clark 				http://html5doctor.com/html-5-reset-stylesheet/
 Normalize.css  							:	Nicolas Gallagher 		http://necolas.github.io/normalize.css/
+
+Third party components included	
+jQuery									:	http://jquery.com
+Modernizr								:	http://modernizr.com
+Selectivizr								:	http://selectivizr.com
