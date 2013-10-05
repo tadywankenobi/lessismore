@@ -1,4 +1,6 @@
-Less Is More - The simple responsive framework
+Less Is More
+
+The simple responsive framework
 ==========
 
 Less is more is currently a work in progress. It looks to:
