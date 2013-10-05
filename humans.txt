@@ -1,0 +1,7 @@
+HTML, SASS/CSS, JS Author				:	Tady Walsh
+											@tadywankenobi
+											http://www.tadywalsh.com
+
+Credit to source material:
+Reset.css  								:	Rich Clark 				http://html5doctor.com/html-5-reset-stylesheet/
+Normalize.css  							:	Nicolas Gallagher 		http://necolas.github.io/normalize.css/

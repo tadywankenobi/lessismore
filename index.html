@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta description="untitled" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Microsoft. Delete if not applicable -->
+	<meta http-equiv="cleartype" content="on">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	
+	<title>{{ title }}</title>
+
+	<!-- Not sure if type required here in HTML5. Will research. -->
+	<link type="text/plain" rel="author" href="humans.txt" />
+	
+	<!-- CSS is built from SCSS. Reset and Grid are imported into this at build. -->
+	<link rel="stylesheet" href="css/default.css" media="screen" />
+		
+	<script src="js/modernizr-min.js"></script>
+	
+	<!-- 
+		Not even including this CSS file. If you need it, build it. 
+	-->
+	<!--[if lt IE 7]>
+		<link rel="stylesheet" media="all" href="css/ie6.css" />
+	<![endif]-->
+	
+</head>
+
+<body>
+	
+	<header>
+		<div class="container">
+		</div>
+	</header>
+
+	<div class="full">
+		<section>
+			<article class="col1"><p>Single Full Screen Column</p></article>
+		</section>
+	</div>
+	
+	<div class="container">
+		<section>
+			<article class="col1"><p>Single Contained Column</p></article>
+		</section>
+
+		<section>
+			<article class="col2"><p>Double Contained Columns</p></article>
+			<article class="col2"><p>Double Contained Columns</p></article>
+		</section>
+
+		<section>
+			<article class="col3"><p>Triple Contained Columns</p></article>
+			<article class="col3"><p>Triple Contained Columns</p></article>
+			<article class="col3"><p>Triple Contained Columns</p></article>
+		</section>
+
+		<section>
+			<article class="col4"><p>Quadruple Contained Columns</p></article>
+			<article class="col4"><p>Quadruple Contained Columns</p></article>
+			<article class="col4"><p>Quadruple Contained Columns</p></article>
+			<article class="col4"><p>Quadruple Contained Columns</p></article>
+		</section>
+	</div>
+
+	<footer>
+		<div class="container"></div>
+	</footer>
+
+</body>
+
+	<!-- If there's no access to the online jQuery repo, use a local copy. Uncomment if jQuery required. Note, jQuery 2.0.3 does NOT support <= IE8 -->
+	<!-- script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.0.3.min.js">\x3C/script>')</script-->
+
+	<!-- 
+		If you really, really want to support pseudo classes in IE6-8, uncomment this. If not, delete this and the file from your js folder.
+		Requires a complimentary library like jQuery or dojo tools to work. Ideally load after loading the related library.
+		Handy for things like :last-child, :hover (on items not anchors), etc. http://selectivizr.com/
+	-->
+	<!--script src="js/selectivizr-min.js"></script-->
+	
+	<!-- Place your own scripts in this file. Instructions on how to run jQuery plugins efficiently included in file. -->
+	<!--script src="js/script.js"></script-->
+
+	
+	<!--
+		If you MUST support transparent PNGs on <= IE7, this plugin will do it for you. Not included. http://www.dillerdesign.com/experiment/DD_belatedPNG/.
+		Requires jQuery 1.9 or lower.
+	-->
+	<!--[if lt IE 8]>
+	<script src="js/dd_belated.js"></script>
+	<script>
+		//DD_belatedPNG.fix('');
+	</script>
+	<![endif]-->
+
+</script>
+
+</html>
