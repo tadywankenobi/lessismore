@@ -43,9 +43,10 @@ I'm really glad it's done and once I've used it in a project or two, I'll make r
 
 ###TODO
 
+- Update CSS to avail of *=, ^= & $= selectors
 - Add favicons
 - Add Apple icons
 - Add vertical rhythm supports
 - Flesh out index.html to actually do something as a page
 - Insert content to see how things look
-- Nest columns to test functionality
+- Add rows
