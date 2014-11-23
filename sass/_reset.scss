@@ -2,6 +2,9 @@
  * Nicolas Gallagher's normalize.css (http://necolas.github.io/normalize.css/). May still be some overlap between both, still cleaning up.
  */
 
+/* This just helps a whole bunch on mobile browsers, etc */
+ * {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
 /* Removed b & i tags. Removed list styling from this default, add a nolist class. Apply this to ul/ol if this styling is required. */

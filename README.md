@@ -50,3 +50,6 @@ I'm really glad it's done and once I've used it in a project or two, I'll make r
 - Flesh out index.html to actually do something as a page
 - Insert content to see how things look
 - Add rows
+- Add image support and structure
+- Document how to use mixins
+

@@ -1,1 +1,419 @@
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,dl,dt,dd,.nolist,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}ol,ul,li{font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:"\201C" "\201D" "\2018" "\2019"}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}ins{background-color:#ff9;color:#000;text-decoration:none}del{text-decoration:line-through}mark{background:#ff0;color:#000}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}input,select,button{vertical-align:middle}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}strong{font-weight:bold}em,dfn{font-style:italic}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}pre{white-space:pre-wrap}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}.inv{position:absolute;z-index:9999;top:0;left:0;margin:-1px;height:1px;width:1px;overflow:hidden;clip:rect(0 0 0 0);clip:rect(0, 0, 0, 0)}body,.wrapper,.full{width:100%;float:left}.container{margin:0 3.125%;width:93.75%}@media screen and (min-width: 960px){.container{margin:0 auto;padding:0 3.125%;max-width:960px}}@media screen and (min-width: 1200px){.container{padding:0 2.5%;max-width:1200px}}.col1,.col2,.col4,.col3,.col4,.col5{margin:0;padding:0;float:left;display:inline-block;width:100%}@media screen and (min-width: 480px){.col2,.col4{margin-right:3.3333333%;width:48.3333333%}.col2:last-child,.col4:last-child{margin-right:0}}@media screen and (min-width: 600px){.col3{margin-right:3.3333333%;width:31.1111111%}.col3:last-child{margin-right:0}}@media screen and (min-width: 480px) and (max-width: 800px){.col4:nth-child(2n+2){margin-right:0}}@media screen and (min-width: 800px){.col4{margin-right:3.3333333%;width:22.5%}.col4:last-child{margin-right:0}}article{background:#ccc;height:100px;border-top:solid 20px #fff;text-align:center}p{margin-top:20px}
+/* Combination of both Rich Clark's reset.css on http://html5doctor.com (which in itself is an extension of Eric Meyer's reset.css http://meyerweb.com/eric/tools/css/reset/) and
+ * Nicolas Gallagher's normalize.css (http://necolas.github.io/normalize.css/). May still be some overlap between both, still cleaning up.
+ */
+/* This just helps a whole bunch on mobile browsers, etc */
+/* line 6, ../sass/_reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../sass/_reset.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Removed b & i tags. Removed list styling from this default, add a nolist class. Apply this to ul/ol if this styling is required. */
+/* line 15, ../sass/_reset.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, .nolist, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 17, ../sass/_reset.scss */
+ol, ul, li {
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 19, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 21, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 23, ../sass/_reset.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 25, ../sass/_reset.scss */
+blockquote, q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 27, ../sass/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 29, ../sass/_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* line 30, ../sass/_reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 33, ../sass/_reset.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 38, ../sass/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 40, ../sass/_reset.scss */
+img {
+  border: 0;
+}
+
+/* line 42, ../sass/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 44, ../sass/_reset.scss */
+figure {
+  margin: 0;
+}
+
+/* line 46, ../sass/_reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 48, ../sass/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 50, ../sass/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 52, ../sass/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 54, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 56, ../sass/_reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 58, ../sass/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 60, ../sass/_reset.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 62, ../sass/_reset.scss */
+input, select, button {
+  vertical-align: middle;
+}
+
+/* line 64, ../sass/_reset.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 66, ../sass/_reset.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 68, ../sass/_reset.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 70, ../sass/_reset.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 72, ../sass/_reset.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 74, ../sass/_reset.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 76, ../sass/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 78, ../sass/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 80, ../sass/_reset.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 82, ../sass/_reset.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 84, ../sass/_reset.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 86, ../sass/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 88, ../sass/_reset.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 90, ../sass/_reset.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 92, ../sass/_reset.scss */
+em, dfn {
+  font-style: italic;
+}
+
+/* line 94, ../sass/_reset.scss */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 96, ../sass/_reset.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/* line 98, ../sass/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 100, ../sass/_reset.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 102, ../sass/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 104, ../sass/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Personal accessibility class. Use this to hide elements you don't want sighted users to see, but should be kept for screen readers */
+/* line 107, ../sass/_reset.scss */
+.inv {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  margin: -1px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+
+/*
+ * Include Mixins. Review mixins file for notes on what the mixins do.
+ */
+/*
+ * Simple Media Query
+ */
+/*
+ * Vendor Prefix generator
+ */
+/*
+ * Remove margin on last child in grid and rightmost item in a multiple column grid
+ */
+/*
+ * Vertical rhythm mixin
+ */
+/* Waiting for @cloudsteph to return from holidays to discuss with her!*/
+/* 
+ * Unlike many grid systems, the number of the column relates to the denominator of the fraction represented by the column.
+ * To this end, .col2 is a half, .col3 is a third, .col4 is a quarter, etc.
+ * Personally, I've never used more than a 4 column layout, so I've gone to 5.
+ * Following this lead, it should be easy for you to add columns, should you so need.
+ *
+ * I've also eschewed the 960 grid for a 1200. Not sure if this is a wise choice... Feedback welcome.
+ *
+ * Also leading off with a mobile first template. To this end, everything is the same width.
+ */
+/* Full page wrapper. Used to use body, but can limit inside component widths too much. Still use it sometimes! */
+/* line 19, ../sass/_grid.scss */
+body, .wrapper, .full {
+  width: 100%;
+  float: left;
+}
+
+/* line 21, ../sass/_grid.scss */
+.container {
+  margin: 0 3.125%;
+  width: 93.75%;
+  /* Good universal size. @320 makes col 300. @480 makes col 450. @600 makes col 562.5 (the only real odd one). @800 makes col 750. @960 makes col 900. */
+}
+@media screen and (min-width: 960px) {
+  /* line 21, ../sass/_grid.scss */
+  .container {
+    margin: 0 auto;
+    padding: 0 3.125%;
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 21, ../sass/_grid.scss */
+  .container {
+    padding: 0 2.5%;
+    max-width: 1200px;
+  }
+}
+
+/* line 30, ../sass/_grid.scss */
+[class^="col"] {
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: inline-block;
+  width: 100%;
+}
+
+/* all column base format */
+@media screen and (min-width: 480px) {
+  /* line 33, ../sass/_grid.scss */
+  .col2, .col4 {
+    margin-right: 3.3333333%;
+    width: 48.3333333%;
+    /* 223px col w/ 15px space @480px */
+  }
+  /* line 26, ../sass/_mixins.scss */
+  .col2:last-child, .col4:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 40, ../sass/_grid.scss */
+  .col3 {
+    margin-right: 3.3333333%;
+    width: 31.1111111%;
+    /* 175px col w/ 18.75px space @600px */
+  }
+  /* line 26, ../sass/_mixins.scss */
+  .col3:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 47, ../sass/_grid.scss */
+.col4 {
+  /* below 480, act like a 2 col layout */
+}
+@media screen and (min-width: 480px) and (max-width: 800px) {
+  /* line 30, ../sass/_mixins.scss */
+  .col4:nth-child(2n+2) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 47, ../sass/_grid.scss */
+  .col4 {
+    margin-right: 3.3333333%;
+    width: 22.5%;
+    /* 168.75px col w/ 25px space @800px */
+  }
+  /* line 26, ../sass/_mixins.scss */
+  .col4:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 3, ../sass/default.scss */
+article {
+  background: #ccc;
+  height: 100px;
+  border-top: solid 20px #fff;
+  text-align: center;
+}
+
+/* line 4, ../sass/default.scss */
+p {
+  margin-top: 20px;
+}
